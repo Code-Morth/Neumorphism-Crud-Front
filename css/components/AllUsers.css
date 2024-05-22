@@ -1,0 +1,21 @@
+.AllUsers {
+  @apply h-full flex justify-center items-center;
+
+  .allUsers-container {
+    @apply flex w-auto h-auto justify-center rounded-[0.7rem] p-[2rem] bg-[#68e893];
+    box-shadow: 20px 20px 64px #57c37b, -20px -20px 64px #79ffab;
+  }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    @apply border-[#001F3F] border-[0.2rem] py-[0.4rem] px-[1rem] text-center;
+  }
+
+  .router-container {
+    @apply contents;
+  }
+}

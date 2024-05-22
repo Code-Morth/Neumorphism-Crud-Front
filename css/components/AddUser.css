@@ -1,0 +1,26 @@
+.AddUser {
+  @apply w-[100vw] h-full flex justify-center items-center text-[1.2rem] text-[#001F3F] font-semibold;
+
+  .container-form {
+    @apply flex flex-col w-[30rem] h-auto justify-center items-center rounded-[1.5rem] p-[4rem] gap-[1rem] bg-[linear-gradient(145deg,#5ed184,#6ff89d)];
+    box-shadow: 20px 20px 78px #53ba76, -20px -20px 78px #7dffb0;
+  }
+
+  label {
+    @apply bg-transparent text-[1.5rem] font-bold w-full;
+  }
+
+  input {
+    @apply bg-transparent border-[#001F3F] border-[0.2rem] text-[1rem] rounded-[0.3rem] w-full p-[0.3rem];
+  }
+
+  input::-webkit-input-placeholder {
+    @apply text-[#001F3F];
+  }
+
+  button {
+    @apply w-[100%] max-w-[15rem] p-[0.7rem] font-bold rounded-[1.5rem] m-[1rem] bg-[linear-gradient(145deg,#6ff89d,#5ed184)];
+
+    box-shadow:  20px 20px 54px #459961,
+    -20px -20px 54px #8bffc5;  }
+}

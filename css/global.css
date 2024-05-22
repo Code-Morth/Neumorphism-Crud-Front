@@ -1,0 +1,17 @@
+body{
+
+    @apply bg-[#68e893] h-full;
+
+}
+
+html{
+
+    @apply h-full ;
+
+}
+
+#app{
+
+    @apply h-full ;
+
+}

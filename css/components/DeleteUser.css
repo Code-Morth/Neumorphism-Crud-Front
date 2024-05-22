@@ -1,0 +1,28 @@
+.DeleteUser{
+
+    @apply h-full flex justify-center items-center;
+
+
+    .deleteUser-container{
+
+        @apply w-auto p-[2rem] rounded-[0.5rem] flex justify-center gap-[2rem] bg-[#68e893] ;
+        box-shadow:  20px 20px 64px #57c37b,
+             -20px -20px 64px #79ffab;
+
+        input {
+            @apply bg-transparent border-[#001F3F] border-[0.2rem] text-[1rem] rounded-[0.3rem] w-[20%] min-w-[13rem] p-[0.3rem];
+          }
+      
+          input::-webkit-input-placeholder {
+            @apply text-[#001F3F];
+          }
+      
+          button {
+            @apply w-[100%] max-w-[15rem] p-[0.7rem] font-bold rounded-[1.5rem] bg-[linear-gradient(145deg,#6ff89d,#5ed184)];
+        
+            box-shadow: 29px 29px 59px #49a267, -29px -29px 59px #87ffbf;
+          }
+
+    }
+
+}

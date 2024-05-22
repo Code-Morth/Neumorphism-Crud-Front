@@ -1,0 +1,5 @@
+.AllUsersChildren{
+
+    @apply text-[2rem] font-semibold w-full h-full flex justify-center items-center ;
+
+}

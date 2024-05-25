@@ -2,12 +2,14 @@ const url = 'http://localhost:3000/api/user'
 
 //  const urlPrueba = process.env.API_URL
 
-const createUsers = async (dataUser: object) => {
+const createUsers = async (dataUser: FormData) => {
+
+  console.log(dataUser)
+
   try {
     const response = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(dataUser)
+      body: dataUser
     })
 
     return response.json()

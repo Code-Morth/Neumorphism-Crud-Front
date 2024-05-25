@@ -1,0 +1,11 @@
+.Home{
+
+    @apply flex justify-center items-center w-full h-full ;
+
+    .home-container{
+
+        @apply font-semibold text-[5rem];
+
+    }
+
+}

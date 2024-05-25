@@ -6,7 +6,7 @@ const addUserThis = async (data: any) => {
 
     data.preventDefault()
 
-    await createUsers(Object.fromEntries(new FormData(data.target)))
+    await createUsers(new FormData(data.target as HTMLFormElement))
 
 }
 
@@ -19,7 +19,11 @@ const addUserThis = async (data: any) => {
             <input placeholder="Nombre de usuario" name="name" type="text">
             <label for="email">Email</label>
             <input placeholder="example@gmail.com" type="text" name="email">
+            <label for="avatar">Foto</label>
+            <input type="file" name='avatar'>
+
             <button>Agregar usuario</button>
         </form>
+        
     </div>
 </template>

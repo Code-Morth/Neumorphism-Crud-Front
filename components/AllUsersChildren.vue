@@ -14,12 +14,15 @@ const dataUser = ref<any>(null);
 
     dataUser.value = data
 
+    console.log('data.avatar ', dataUser?.value?.avatar)
+
 })()
 
 </script>
 
 <template>
     <div class='AllUsersChildren'>
+        <img v-if='dataUser?.value?.avatar !== null' :src='dataUser?.value?.avatar' alt="">
         <div class='allUsersChildren-container' v-if='dataUser !== null'>
             Hola {{ dataUser?.name }}, con correo {{ dataUser?.email }} e id {{ dataUser?.id }}
         </div>
